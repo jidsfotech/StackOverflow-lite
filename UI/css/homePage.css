@@ -1,8 +1,8 @@
-#homePage-top-section{
+#PageBody-top-section{
     margin-top: 1%
 }
 
-#homePage-top-section-left{
+#PageBody-top-section-left{
     float: left;
     width: 40%;
     height: 320px;
@@ -13,7 +13,7 @@
     padding:10px;
 }
 
-#homePage-top-section-right{
+#PageBody-top-section-right{
     float: left;
     padding: 10px;
     width: 60%;
@@ -95,7 +95,7 @@
     font-style: italic;
 
 }
-#homePage-bottom-section-left{
+#PageBody-bottom-section-left{
     margin-top: 35px;
     padding: 3px;
     float: left;
@@ -103,9 +103,10 @@
     border-right-style: solid;
     border-width: thin;
     border-right-color: rgba(182, 173, 167, 0.733);
+    display: block;
 }
 
-#homePage-bottom-left-section-header{
+#bottom-left-section-header{
     border-bottom-style: solid;
     border-width: thin;
     border-bottom-color: rgba(182, 173, 167, 0.733);
@@ -250,14 +251,15 @@
     cursor: pointer;
 }
 
-#homePage-bottom-section-right{
+#PageBody-bottom-section-right{
     margin-top: 20px;
     float: right;
     width:30%;
+    display: block;
 
 }
 
-#homePage-bottom-right-section-header{
+#Page-bottom-right-section-header{
     height: 50px;
     width:95%;
     background-color:rgb(190, 196, 190);
@@ -286,4 +288,18 @@
 #recently-asked-question-posted-on-and-asked-by{
     float: left;
     margin-left: 15px;
+}
+
+footer {
+    background-color: rgb(18, 5, 41);
+    padding: 10px;
+    text-align:left;
+    color: white;
+    height: 50px;
+    width: 100%;
+    float: left;
+}
+footer a{
+    text-decoration: none;
+    color: white;
 }
