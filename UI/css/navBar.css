@@ -34,7 +34,8 @@ body {
     margin-left: auto;
     font-size: 18px;
     color:#5cbbe0;
-    align-items: center
+    align-items: center;
+    padding: 9px;
 }
 .navbar-link{
     cursor: pointer;
@@ -106,6 +107,14 @@ body {
     padding: 15px;
 }
 .about:hover{
+    color: #fff;
+}
+
+.user-profile{
+    padding: 25px;
+}
+
+.user-profile:hover{
     color: #fff;
 }
 
