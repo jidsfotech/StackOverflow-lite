@@ -33,24 +33,27 @@ body {
 .navbar__Items_right{
     margin-left: auto;
     font-size: 18px;
-    color:#5cbbe0;
     align-items: center;
     padding: 9px;
 }
 .navbar-link{
     cursor: pointer;
+    color:#5cbbe0;
 }
 .web-site-brand-link{
     font-size: 22px;
-    color: white;
     padding: 8px;
     float: left;
     background: rgb(87, 82, 82);
     cursor: pointer;
     height:30px;
 }
-.web-site-brand-link:hover{
+.web-site-brand-link a:hover{
     color: rgba(51, 134, 230, 0.925);
+}
+.web-site-brand-link a{
+    text-decoration: none;
+    color: white;
 }
 .search{
     margin-left:400px;
@@ -106,7 +109,13 @@ body {
 .about{
     padding: 15px;
 }
-.about:hover{
+
+.about a{ 
+    text-decoration: none;
+    color:#5cbbe0;
+}
+
+.about a:hover{
     color: #fff;
 }
 
@@ -114,7 +123,12 @@ body {
     padding: 25px;
 }
 
-.user-profile:hover{
+.user-profile a{
+    text-decoration: none;
+    color:#5cbbe0;
+}
+
+.user-profile a:hover{
     color: #fff;
 }
 
