@@ -52,10 +52,6 @@ app.get('/api/v1/questions', (req, res) =>{
     });
 });
 
-//API endpoint to Fetch a specific question
-app.get('/api/v1/question_Id/question', (req, res) =>{
-    
-});
 
 
 //custom 404 page
