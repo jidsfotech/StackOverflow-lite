@@ -1,7 +1,7 @@
 
 var express = require('express');
 var path = require('path');
-var db = require('./db/stackOverflowLiteDataBAse');
+var db = require('./db/stackOverflowLiteDataBase');
 var bodyParser = require('body-parser');
 var app = express()
 
@@ -44,11 +44,10 @@ app.get('/index', function(req, res){
 
 //API endpoint to Fetch all questions
 app.get('/api/v1/questions', (req, res) =>{
-    res.status(200);
     res.send({
         success:'True',
         message:'Questions retrived succesfully',
-        questions:db
+        question:db
     });
 });
 
