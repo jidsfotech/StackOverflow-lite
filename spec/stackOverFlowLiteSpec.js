@@ -27,7 +27,7 @@ describe('StackOverFlowLite API End Point Test', () => {
         });
 
         it('returns a specific question "GET /questions/<questionId>"', (done) => {
-            request.get('http://localhost:3000/api/v2/questions/: 2', (error, response, body) => {
+            request.get('http://localhost:3000/api/v2/question', (error, response, body) => {
                 expect(response.statusCode).toBe(200);
                 expect(typeof response.body).toBe("string")
                 expect(() => {
@@ -36,14 +36,23 @@ describe('StackOverFlowLite API End Point Test', () => {
                 done();
             });
         });
+    });
 
+    describe('/ POST', () => {
         it('add a question "POST /questions"', (done) => {
             request.post('http://localhost:3000/api/v3/questions', (error, response, body) => {
                 expect(response.statusCode).toBe(200);
                 done();
             })
-        })
+        });
 
+        it('add answer to a question "POST /questions/<questionId>/answers"', (don) => {
+            request.post('http://localhost:3000/api/v4/questions/:02/answers', (error, response, body) => {
+                expect(response.statusCode).toBe(200);
+                done();
+            });
+        });
     });
-
 });
+
+

@@ -85,9 +85,9 @@ app.post('/api/v3/questions', (req, res) => {
             "questionTitle": req.body.title,
             "questionBody": req.body.questionSummary,
             "tags": req.body.tags,
-            "Author":req.body.Author,
-            "questionActivities":req.body.questionActivities,
-            "answers":req.body.answers
+            "Author": req.body.Author,
+            "questionActivities": req.body.questionActivities,
+            "answers": req.body.answers
         };
 
         //Object.assign(db.questions, {[id]:question});
@@ -97,6 +97,22 @@ app.post('/api/v3/questions', (req, res) => {
     }
 });
 
+app.post('/api/v4/questions/:id/answers', (req, res) => {
+    if (!req.body.answer) {
+        res.status(400).send({
+            message: "false",
+            success: "provide an answer"
+        });
+    } else {
+        var serialize_id = req.params.id.replace(/[^a-z0-9]/g, '')
+        const id = "question_0" + serialize_id;
+        var userId = "answeredBy_" + "jidsmotha";
+        var answerProvided = req.body.answer;
+        db[id]['answers'][userId] = answerProvided;
+        res.status(200).send(answerProvided);
+        fs.writeFile('./db/stackOverflowLiteDataBase.json', JSON.stringify(db));
+    }
+});
 
 //custom 404 page
 app.use(function (req, res) {
