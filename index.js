@@ -97,6 +97,7 @@ app.post('/api/v3/questions', (req, res) => {
     }
 });
 
+//API endpoint to Add answer to a question
 app.post('/api/v4/questions/:id/answers', (req, res) => {
     if (!req.body.answer) {
         res.status(400).send({
