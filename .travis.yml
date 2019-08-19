@@ -1,6 +1,8 @@
 language: node_js
-node_js: 
-  - "stable"
+
+node_js: - "stable"
+
+before_script: - "npm i -g jasmine-node"
+
 cache:
-  directories:
-    - "node_modules"
+  directories: - "node_modules"
