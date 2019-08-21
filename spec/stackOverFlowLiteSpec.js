@@ -38,7 +38,7 @@ describe('StackOverFlowLite API End Point Test', () => {
         });
     });
 
-   describe('/ POST', () => {
+   /*describe('/ POST', () => {
         it('add a question "POST /questions"', (done) => {
             request.post('http://localhost:3000/api/v3/questions', (error, response, body) => {
                 expect(response.statusCode).toBe(400);
@@ -52,7 +52,7 @@ describe('StackOverFlowLite API End Point Test', () => {
                 done();
             });
         });
-    });
+    });*/
 });
 
 
