@@ -6,7 +6,8 @@ before_script:
 script:
     #- "npm test"
     - "npm run cover"
-
+after_success:
+  - npm run coveralls
 #Specify which branches to build using a safelist, or blocklist branches that you do not want to be built:
 # blocklist
 branches:
