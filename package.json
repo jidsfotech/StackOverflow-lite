@@ -1,0 +1,33 @@
+{
+  "name": "stackoverflow-lite",
+  "version": "1.0.0",
+  "description": "StackOverflow-lite is a platform where people can ask questions and provide answers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node spec/stackOverFlowLiteSpec.js",
+    "build": "babel index.js -o compiled.js",
+    "start": "nodemon index.js --exec babel-node --"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jidsfotech/StackOverflow-lite.git"
+  },
+  "author": "Shuaib Majeed B.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jidsfotech/StackOverflow-lite/issues"
+  },
+  "homepage": "https://github.com/jidsfotech/StackOverflow-lite#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jasmine-node": "^3.0.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.6",
+    "nodemon": "^1.19.1"
+  }
+}
