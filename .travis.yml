@@ -4,7 +4,6 @@ node_js:
 before_script: 
     - "npm i -g jasmine-node"
 script:
-    #- "npm test" "runs jasmine test from test script in package.json"
     - "npm test"
 
 #Specify which branches to build using a safelist, or blocklist branches that you do not want to be built:
