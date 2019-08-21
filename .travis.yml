@@ -3,21 +3,19 @@ node_js:
     - "stable"
 before_script: 
     - "npm i -g jasmine-node"
-script:
+script: "true"
     #- "npm test"
-    - "npm run cover"
-after_success:
-  - npm run coveralls
+#after_success:
 #Specify which branches to build using a safelist, or blocklist branches that you do not want to be built:
 # blocklist
-branches:
-  except:
+# branches:
+  #except:
   #- name of branch not to build
   #- name of branch not to build
 
 # safelist
-branches:
-  only:
+# branches:
+  # only:
   #- name of branch to build
   #- name of branch to build
 cache:
