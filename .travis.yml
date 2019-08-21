@@ -3,7 +3,8 @@ node_js:
     - "stable"
 before_script: 
     - "npm i -g jasmine-node"
-script: "true" 
+script:
+    - "npm test" 
 cache:
     directories: 
         - "node_modules"
