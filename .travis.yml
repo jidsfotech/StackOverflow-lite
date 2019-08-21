@@ -4,7 +4,7 @@ node_js:
 before_script: 
     - "npm i -g jasmine-node"
 script:
-    - "npm run test" 
+    - "npm test" 
 cache:
     directories: 
         - "node_modules"
