@@ -1,10 +1,11 @@
 language: node_js
 node_js: 
-    - 10
+    - "stable"
 before_script: 
     - "npm i -g jasmine-node"
 script:
     - "npm test" 
 cache:
     directories: 
+        - "$HOME/.npm"
         - "node_modules"
