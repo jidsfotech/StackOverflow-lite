@@ -6,7 +6,7 @@ before_script:
     - "npm i -g jasmine-node"
 script: 
     - "npm run cover"
-after_success:
+after_script:
   - npm run coveralls
 cache:
   directories:
