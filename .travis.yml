@@ -1,13 +1,9 @@
-
 language: node_js
 node_js: 
     - "stable"
-before_script: 
-    - "npm i -g jasmine-node"
+install: 
+    - "npm install"
 script: 
     - "npm run cover"
-after_script:
+after_success:
   - npm run coveralls
-cache:
-  directories:
-    - "node_modules" 
