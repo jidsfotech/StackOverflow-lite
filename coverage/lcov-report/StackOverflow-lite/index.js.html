@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for StackOverflow-lite\index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">StackOverflow-lite/</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">55.74% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>34/61</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">25% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">55.74% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>34/61</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var express = require('express');
+var path = require('path');
+var db = require('./db/stackOverflowLiteDataBase');
+var bodyParser = require('body-parser');
+var fs = require('fs');
+&nbsp;
+var app = express()
+&nbsp;
+app.use(express.static(path.join(__dirname, '/css')));
+app.use(express.static(path.join(__dirname, '/js')));
+app.use(express.static(path.join(__dirname, 'img')));
+&nbsp;
+// Parse incoming requests data
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+&nbsp;
+app.set('port', process.env.PORT || 3000);
+&nbsp;
+//Route for the home page
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+&nbsp;
+//Route for the ask-question page
+app.get('/postQuestion', <span class="fstat-no" title="function not covered" >function (req, res) {</span>
+<span class="cstat-no" title="statement not covered" >    res.sendFile(path.join(__dirname, 'postQuestion.html'));</span>
+});
+&nbsp;
+//Route rout to get a question and it answeers 
+app.get('/questionAndAnswers', <span class="fstat-no" title="function not covered" >function (req, res) {</span>
+<span class="cstat-no" title="statement not covered" >    res.sendFile(path.join(__dirname, 'questionAndAnswers.html'));</span>
+});
+&nbsp;
+//Routes for the about page
+app.get('/about', <span class="fstat-no" title="function not covered" >function (req, res) {</span>
+<span class="cstat-no" title="statement not covered" >    res.type('text/plain');</span>
+<span class="cstat-no" title="statement not covered" >    res.send('about page');</span>
+});
+&nbsp;
+&nbsp;
+//Route for the home page
+app.get('/index', <span class="fstat-no" title="function not covered" >function (req, res) {</span>
+<span class="cstat-no" title="statement not covered" >    res.sendFile(path.join(__dirname, 'index.html'));</span>
+});
+&nbsp;
+//API endpoint to Fetch all questions
+app.get('/api/v1/questions', (req, res) =&gt; {
+    res.send({
+        success: 'True',
+        message: 'Questions retrived succesfully',
+        data: db
+    });
+});
+&nbsp;
+//API endpoint to Fetch a specific question
+app.get('/api/v2/questions/:id', (req, res) =&gt; {
+    var serialize_id = req.params.id.replace(/[^a-z0-9]/g, '')
+    const questionId = "question_0" + serialize_id;
+    res.send({
+        success: 'True',
+        message: 'Question retrived succesfully',
+        data: db[questionId]
+    });
+});
+&nbsp;
+//API endpoint to Add a question
+app.post('/api/v3/questions', (req, res) =&gt; {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (!req.body.title) {
+        res.status(400).send({
+            success: "false",
+            message: "provide title for your question"
+        })
+    } else <span class="cstat-no" title="statement not covered" >if (!req.body.questionSummary) {</span>
+<span class="cstat-no" title="statement not covered" >        res.status(400),</span>
+            res.send({
+                success: "false",
+                message: "please summarise your question"
+            })
+    } else {
+<span class="cstat-no" title="statement not covered" >        var dbsize = Object.keys(db).length + 1;</span>
+<span class="cstat-no" title="statement not covered" >        var id = "question_0" + dbsize;</span>
+<span class="cstat-no" title="statement not covered" >        var question = {</span>
+            "question_Id": id,
+            "questionTitle": req.body.title,
+            "questionBody": req.body.questionSummary,
+            "tags": req.body.tags,
+            "Author": req.body.Author,
+            "questionActivities": req.body.questionActivities,
+            "answers": req.body.answers
+        };
+&nbsp;
+        //Object.assign(db.questions, {[id]:question});
+<span class="cstat-no" title="statement not covered" >        db[id] = question;</span>
+<span class="cstat-no" title="statement not covered" >        res.status(200).send(db);</span>
+<span class="cstat-no" title="statement not covered" >        fs.writeFile('./db/stackOverflowLiteDataBase.json', JSON.stringify(db));</span>
+    }
+});
+&nbsp;
+//API endpoint to Add answer to a question
+app.post('/api/v4/questions/:id/answers', (req, res) =&gt; {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (!req.body.answer) {
+        res.status(400).send({
+            message: "false",
+            success: "provide an answer"
+        });
+    } else {
+<span class="cstat-no" title="statement not covered" >        var serialize_id = req.params.id.replace(/[^a-z0-9]/g, '')</span>
+<span class="cstat-no" title="statement not covered" >        const id = "question_0" + serialize_id;</span>
+<span class="cstat-no" title="statement not covered" >        var userId = "answeredBy_" + "jidsmotha";</span>
+<span class="cstat-no" title="statement not covered" >        var answerProvided = req.body.answer;</span>
+<span class="cstat-no" title="statement not covered" >        db[id]['answers'][userId] = answerProvided;</span>
+<span class="cstat-no" title="statement not covered" >        res.status(200).send(answerProvided);</span>
+<span class="cstat-no" title="statement not covered" >        fs.writeFile('./db/stackOverflowLiteDataBase.json', JSON.stringify(db));</span>
+    }
+});
+&nbsp;
+//custom 404 page
+app.use(<span class="fstat-no" title="function not covered" >function (req, res) {</span>
+<span class="cstat-no" title="statement not covered" >    res.type('text/plain');</span>
+<span class="cstat-no" title="statement not covered" >    res.status(404)</span>
+<span class="cstat-no" title="statement not covered" >    res.send('404 error - Not found')</span>
+});
+&nbsp;
+//customer 500 page
+app.use(<span class="fstat-no" title="function not covered" >function (req, res) {</span>
+<span class="cstat-no" title="statement not covered" >    console.error(err.stack);</span>
+<span class="cstat-no" title="statement not covered" >    res.type('text/plain');</span>
+<span class="cstat-no" title="statement not covered" >    res.status(500);</span>
+<span class="cstat-no" title="statement not covered" >    res.send('500 error    - server error');</span>
+});
+&nbsp;
+app.listen(app.get('port'), function () {
+    console.log('Express started on http://localhost:' +
+        app.get('port') + '; press Ctrl-C to terminate.')
+});</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Aug 28 2019 16:22:52 GMT+0100 (W. Central Africa Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

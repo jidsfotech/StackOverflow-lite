@@ -1,0 +1,198 @@
+{
+    "question_01": {
+        "question_Id": "01",
+        "questionTitle": "what is the diffrence between python and javascript",
+        "questionBody": "Its impossible to use placeholder on date fields but I really need it. I want two date inputs with texts",
+        "tags": [],
+        "Author": {
+            "userName": "jids",
+            "time": "12:30"
+        },
+        "questionActivities": {
+            "votes": "5",
+            "answers": "2",
+            "views": "66"
+        },
+        "answers": {
+            "answeredBy_userId": {
+                "date": "march 22 2019",
+                "answerProvided": ""
+            },
+            "answeredBy_jidsmotha": {
+                "date": "04-02-2017",
+                "answerProvided": "Together with a list of Python packages, tools like editors, Python distributions include the Python interpreter. Anaconda is one of several Python distributions. Anaconda is a new distribution of the Python and R data science package. It was formerly known as Continuum Analytics."
+            }
+        }
+    },
+    "question_02": {
+        "question_Id": "02",
+        "questionTitle": "what is the diffrence between python and javascript",
+        "questionBody": "Its impossible to use placeholder on date fields but I really need it. I want two date inputs with texts",
+        "tags": [],
+        "Author": {
+            "userName": "jids",
+            "time": "12:30"
+        },
+        "questionActivities": {
+            "votes": "5",
+            "answers": "2",
+            "views": "66"
+        },
+        "answers": {
+            "answeredBy_userId": {
+                "date": "march 22 2019",
+                "answerProvided": "language-bindings between Python and Objective-C, acting as a bridge between them. Practically, that means you can utilize Objective-C libraries (including everything you need to create OS X applications) from your Python code, and Python modules from your Objective-C code. In this case, it’s convenient that CPython is written in C, which is a subset of Objective-C."
+            }
+        }
+    },
+    "question_03": {
+        "question_Id": "question_03",
+        "questionTitle": "here is the title ",
+        "questionBody": "here is the question summary",
+        "tags": [
+            "java",
+            "python",
+            "perl"
+        ],
+        "Author": {
+            "userName": "lion",
+            "time": "01:55"
+        },
+        "questionActivities": {
+            "votes": "5",
+            "answers": "2",
+            "views": "66"
+        },
+        "answers": {
+            "answeredBy_userId": {
+                "date": "march 22 2019",
+                "answerProvided": "maybe a car engine, a computer file, a router, or a temperature reading. ... Unfortunately, private object properties don't exist in JavaScript. .... Subclasses let us incorporate another class's state and behavior into our own. .... ES6 classes fixed this by changing when and by whom objects are allocated."
+            }
+        }
+    },
+    "question_04": {
+        "question_Id": "question_04",
+        "questionTitle": "here is the title ",
+        "questionBody": "here is the question summary",
+        "tags": [
+            "java",
+            "python",
+            "perl"
+        ],
+        "Author": {
+            "userName": "lion",
+            "time": "01:55"
+        },
+        "questionActivities": {
+            "votes": "5",
+            "answers": "2",
+            "views": "66"
+        },
+        "answers": {
+            "answeredBy_userId": {
+                "date": "march 22 2019",
+                "answerProvided": "maybe a car engine, a computer file, a router, or a temperature reading. ... Unfortunately, private object properties don't exist in JavaScript. .... Subclasses let us incorporate another class's state and behavior into our own. .... ES6 classes fixed this by changing when and by whom objects are allocated."
+            }
+        }
+    },
+    "question_05": {
+        "question_Id": "question_05",
+        "questionTitle": "here is the title ",
+        "questionBody": "here is the question summary",
+        "tags": [
+            "php",
+            "java-script",
+            "python"
+        ],
+        "Author": {
+            "userName": "tiger",
+            "time": "02:55"
+        },
+        "questionActivities": {
+            "votes": "5",
+            "answers": "2",
+            "views": "66"
+        },
+        "answers": {
+            "answeredBy_userId": {
+                "date": "feb 22 2019",
+                "answerProvided": "JavaScript offers many ways to copy an object, but not all provide ... cloning ') console.info( '✏ Notice the i.color property we changed on ..."
+            }
+        }
+    },
+    "question_06": {
+        "question_Id": "question_06",
+        "questionTitle": "here is the title ",
+        "questionBody": "here is the question summary",
+        "tags": [
+            "php",
+            "java-script",
+            "python"
+        ],
+        "Author": {
+            "userName": "tiger",
+            "time": "02:55"
+        },
+        "questionActivities": {
+            "votes": "5",
+            "answers": "2",
+            "views": "66"
+        },
+        "answers": {
+            "answeredBy_userId": {
+                "date": "feb 22 2019",
+                "answerProvided": "JavaScript offers many ways to copy an object, but not all provide ... cloning ') console.info( '✏ Notice the i.color property we changed on ..."
+            }
+        }
+    },
+    "question_07": {
+        "question_Id": "question_07",
+        "questionTitle": "here is the title ",
+        "questionBody": "here is the question summary",
+        "tags": [
+            "php",
+            "java-script",
+            "python"
+        ],
+        "Author": {
+            "userName": "tiger",
+            "time": "02:55"
+        },
+        "questionActivities": {
+            "votes": "5",
+            "answers": "2",
+            "views": "66"
+        },
+        "answers": {
+            "answeredBy_userId": {
+                "date": "feb 22 2019",
+                "answerProvided": "JavaScript offers many ways to copy an object, but not all provide ... cloning ') console.info( '✏ Notice the i.color property we changed on ..."
+            }
+        }
+    },
+    "question_08": {
+        "question_Id": "question_08",
+        "questionTitle": "here is the title ",
+        "questionBody": "here is the question summary",
+        "tags": [
+            "php",
+            "java-script",
+            "python"
+        ],
+        "Author": {
+            "userName": "tiger",
+            "time": "02:55"
+        },
+        "questionActivities": {
+            "votes": "5",
+            "answers": "2",
+            "views": "66"
+        },
+        "answers": {
+            "answeredBy_userId": {
+                "date": "feb 22 2019",
+                "answerProvided": "JavaScript offers many ways to copy an object, but not all provide ... cloning ') console.info( '✏ Notice the i.color property we changed on ..."
+            }
+        }
+    }
+}

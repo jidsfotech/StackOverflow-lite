@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <title>Stackoverflow-Lite</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Cuprum" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  Styles  -->
+    <link rel="stylesheet" type="text/css" media="screen" href="/navBar.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/StackOverflow-Lite-Pages.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/questionsAndanswers.css">
+</head>
+
+<body>
+    <header class="navContainer" id="NavContainer">
+        <div class="Navbar">
+            <div class="navbar-link web-site-brand-link">
+                <a href="index.html">Stackoverflow-Lite</a>
+            </div>
+            <div class="navbar-link-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav class="navbar__Items">
+                <div class="navbar-link search">
+                    <input type="text" class="searchTerm" placeholder="Search...">
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </nav>
+            <nav class="navbar__Items navbar__Items_right">
+                <div class="navbar-link user-profile">
+                    <a href="userProfile.html">Welcome User!..</a>
+                </div>
+                <div class="navbar-link about">
+                    <a href="#">About</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <!-- nav bar end-->
+    <div id="seperator-line">
+        StackOverflow-lite is a platform where people can ask questions and provide answers.
+    </div>
+    <div id="PageBody-bottom-section-left">
+        <div id="question-and-answers-bottom-left-section-header">
+            <div id="question-and-answers-header" class="inline">
+                Question And Answers
+            </div>
+            <div id="ask-question-button" class="inline">
+                <a href="postQuestion.html"><button> Ask Question</button></a>
+            </div>
+        </div>
+        <div id="question">
+            <div id="question-title">
+                <h2>How do I simulate placeholder functionality on input date field?</h2>
+            </div>
+            <hr>
+            <div id="question-body">
+                <p>It's impossible to use placeholder on date fields but I really need it. I want two date inputs with texts
+                    "From" and "To" on each one as placeholders.
+                </p>
+                <p id="question-by-thisUser">Question by <a href="UserProfile.html">Jidsmooths</a>
+                    <time id="question-time">Jan 18, 2018 at 11:23 PM</time>
+                </p>
+            </div>
+            <div id="answers-summary">
+                <h3 id="number-answer">2 Answers</h3>
+            </div>
+            <hr>
+            <div id="answers-body">
+                <p>
+                    <label id="Answers-position">
+                        <b>1)</b>
+                    </label>
+                    When you simulate placeholder behavior in incompatible browsers, be mindful of how that will affect your validation. Set
+                    ad efault value that disappears onfocus and reappears onblur.
+                </p>
+                <p id="answer-provided-by-thisUser">Answered by<a href="UserProfile.html">lame</a>
+                    <time id="answer-time">Jan 18, 2018 at 11:23 PM</time>
+                </p>
+            </div>
+            <hr>
+            <div id="provide-answer">
+                <h3>Provide Answer</h3>
+                <form action="#" method="post" id="provide-answer-form">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Summarise the question you want to aske here">
+                        </textarea>
+                    <button>Post Answer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="PageBody-bottom-section-right">
+        <div id="Page-bottom-right-section-header">
+            Recently Asked Questions
+        </div>
+        <div id="recently-asked-questions">
+            <a href="#" id="recently-asked-questions-link">
+                Change quantity stock error notice in WooCommerce
+            </a>
+        </div>
+        <div id="recently-asked-question-posted-on-and-asked-by">
+            <a href="#" id="question-started">asked
+                <span id="relativetime">7secs ago</span>
+            </a>
+            <a href="#" id="asked-by">justine</a>
+        </div>
+        <div id="recently-asked-questions">
+            <a href="#" id="recently-asked-questions-link">
+                Change quantity stock error notice in WooCommerce
+            </a>
+        </div>
+        <div id="recently-asked-question-posted-on-and-asked-by">
+            <a href="#" id="question-started">asked
+                <span id="relativetime">3 secs ago</span>
+            </a>
+            <a href="#" id="asked-by">majeed</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;<a href="">Stack Overflow-Lite 2019</a></p>
+    </footer>
+    <!-- Script-->
+    <script src="js/stackoverflowlite.js"></script>
+</body>
+
+</html>

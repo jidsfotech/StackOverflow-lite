@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/jidsfotech/StackOverflow-lite.svg?branch=master)](https://travis-ci.org/jidsfotech/StackOverflow-lite) [![Coverage Status](https://coveralls.io/repos/github/jidsfotech/StackOverflow-lite/badge.svg)](https://coveralls.io/github/jidsfotech/StackOverflow-lite)
+ 
+
 # StackOverflow-lite
 StackOverflow-lite StackOverflow-lite is a platform where people can ask questions and provide answers. When users are logged in they will be able to see list of all top questions the number of answers already provided for the each question in the list. they will be able to click and view a question and also provide theirs .
 
