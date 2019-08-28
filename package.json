@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jasmine-node spec/stackOverFlowLiteSpec.js",
     "build": "babel index.js -o compiled.js",
-    "start": "nodemon index.js --exec babel-node --",
+    "start-dev":"nodemon index.js --exec babel-node --",
+    "start": "node index.js --exec babel-node --",
     "cover": "node ./node_modules/istanbul/lib/cli cover ./node_modules/jasmine-node/bin/jasmine-node spec",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
